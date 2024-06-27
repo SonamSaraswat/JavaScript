@@ -1,10 +1,21 @@
-const { boolean } = require("zod");
+const { boolean, symbol } = require("zod");
 
 let n=19;
 let name="sonam"
 let isloggedIn=true
 
+let id=symbol('123')
+let another_id=symbol('123')
+
+console.log(id===another_id)
+
 //primitive data type
+
+//7 primitive datatypes
+//string,number,boolean,null,undefined,symbol,bigint
+
+//NOn primitive type
+//Array,Object,Functions
 
 //number => 2 to 53
 //bigint 
@@ -62,5 +73,9 @@ console.log(1+1+"2");
 //jo pehle hota h uske hisabh se operation hota h
 //pehle string toh string
 //pehle number toh number
+
+
+
+
 
 
