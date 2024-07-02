@@ -80,3 +80,17 @@ console.log(Object.keys(grandfamily));
 console.log(Object.values(grandfamily));
 console.log(Object.entries(grandfamily));
 
+
+/******************De- Structuring**************** */
+const course={
+    coursename:"DSA",
+    courseprice:"999",
+    courseInstructor:"Sonam"
+}
+
+const{courseInstructor: teacher}=course
+console.log(teacher);
+
+
+
+
