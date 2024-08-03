@@ -1,0 +1,39 @@
+//clearInterval
+//SetInterval
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Chai Aur Code</h1>
+
+    <button id="stop">Stop</button>
+    <button id="save">Save</button>
+    
+</body>
+
+<script>
+    const changeMe=function(){
+        document.querySelector('h1').innerHTML="HELLO SONAM"
+    }
+
+    let intervalId;
+
+    document.querySelector('#save').addEventListener('click',function(){
+         intervalId=setInterval(changeMe,2000);
+        console.log("changed")
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalId);
+        console.log("yeschanged")
+    })
+
+    
+</script>
+</html>
