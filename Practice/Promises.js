@@ -17,15 +17,16 @@ new Promise(function(resolve,reject){
     console.log("promise 2get executed")
 })
 
-const promisethree=new Promise(function(resolve,reject){
-
-    let error=false;
+const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
-        if(error){
-        console.log("Promise 3 resolved")
+        let error = false
+        if (!error) {
+            resolve({username: "hitesh", password: "123"})
+        } else {
+            reject('ERROR: Something went wrong')
         }
-        else{
-            console.log("Error")
-        }
-    },1000)
+    }, 1000)
+})
+promiseFour.then(function(user){
+    console.log(user)
 })
